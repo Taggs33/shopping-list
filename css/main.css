@@ -1,0 +1,26 @@
+.main {
+	height: 100vh;
+	background-image: url('../images/cleaneating.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#top-headline {
+	margin-top: 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.list-container {
+	width: 500px;
+	height: 500px;
+	background-image: url('../images/post-it.jpg');
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: 1125px;
+}
