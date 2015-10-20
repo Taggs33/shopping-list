@@ -8,6 +8,7 @@
 
 #top-headline {
 	margin-top: 0;
+	padding-top: 50px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
@@ -19,8 +20,10 @@
 	width: 500px;
 	height: 500px;
 	background-image: url('../images/post-it.jpg');
-	/*background-size: cover;*/
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-left: 1125px;
+	/*padding-left: 1125px;*/
+	margin-left: auto;
+	margin-right: auto;
 }
