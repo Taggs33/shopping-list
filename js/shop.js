@@ -4,7 +4,28 @@ $(document).ready(function() {
 		var item = $('.add-item-text').val();
 		$('.add-item-text').val('');
 
-		$('.list').append('<li class="item">' + item + '<i class="fa fa-times"></i></li>');
+		if (item) {
+
+			$('.list').append('<li class="item">' + item + '<i class="fa fa-thumbs-o-up check-item-button"></i><i class="fa fa-times remove-item-button"></i></li>');
+		}
+		else {
+			alert('NO TEXT ENTERED');
+		}
+	});
+
+	// $('.remove-item-button').click(function() {
+	$('.list').on('click', '.remove-item-button', function() {	
+		$(this).closest('.item').remove();
+
+	});	
+
+	// $('.list').on('click', '.check-item-button', function() {
+		// $(this).closest('.item').fadeout();
+
+	$('.list').on('click', '.check-item-button', function() {
+		$(this).closest('.item').wrap('<strike class="red">');
+		$(this).closest('.item').fadeTo('slow', 0.30);
+
 	});
 });
 

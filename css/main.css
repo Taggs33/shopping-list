@@ -48,5 +48,21 @@
 
 }
 .fa-heartbeat {
-	padding: 10px;
+	padding: 20px;
 }
+
+.add-item-button, .remove-item-button, .check-item-button {
+	cursor: crosshair;
+}
+
+strike.red {
+	color: red;
+}
+
+.check-item-button {
+	padding-left: 10px;
+}
+
+
+
+
