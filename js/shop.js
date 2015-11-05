@@ -28,9 +28,6 @@ $(document).ready(function() {
 });
 
 // <li class="item">Bread<i class="fa fa-times"></i></li>
-<<<<<<< HEAD
-function, addItem()
-=======
 function addItem() {
 	var item = $('.add-item-text').val();
 	$('.add-item-text').val('');
@@ -44,4 +41,3 @@ function addItem() {
 	}
 
 }
->>>>>>> gh-pages
