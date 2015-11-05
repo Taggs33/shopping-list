@@ -1,16 +1,14 @@
 $(document).ready(function() {
 
 	$('.add-item-button').click(function() {
-		var item = $('.add-item-text').val();
-		$('.add-item-text').val('');
+		addItem();
+	});
 
-		if (item) {
+	$('#add-item-form').submit(function(event) {
+		event.preventDefault();
+		addItem();
 
-			$('.list').append('<li class="item">' + item + '<i class="fa fa-thumbs-o-up check-item-button"></i><i class="fa fa-times remove-item-button"></i></li>');
-		}
-		else {
-			alert('NO TEXT ENTERED');
-		}
+
 	});
 
 	// $('.remove-item-button').click(function() {
@@ -30,4 +28,20 @@ $(document).ready(function() {
 });
 
 // <li class="item">Bread<i class="fa fa-times"></i></li>
+<<<<<<< HEAD
 function, addItem()
+=======
+function addItem() {
+	var item = $('.add-item-text').val();
+	$('.add-item-text').val('');
+
+	if (item) {
+
+		$('.list').append('<li class="item">' + item + '<i class="fa fa-thumbs-o-up check-item-button"></i><i class="fa fa-times remove-item-button"></i></li>');
+	}
+	else {
+		alert('NO TEXT ENTERED');
+	}
+
+}
+>>>>>>> gh-pages
